@@ -160,6 +160,17 @@ ul { list-style: none; }
   transform: translateY(-2px);
 }
 
+.btn--ghost {
+  background: transparent;
+  color: var(--text-2);
+  border: 1.5px dashed rgba(255,255,255,0.2);
+}
+.btn--ghost:hover {
+  border-color: var(--indigo);
+  color: var(--indigo);
+  transform: translateY(-2px);
+}
+
 .btn--sm   { padding: 10px 20px; font-size: 0.85rem; }
 .btn--full { width: 100%; justify-content: center; }
 
