@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Harris Ishfaq — Senior Software Engineer with 5 years building scalable web apps, AI-powered solutions, and digital health platforms." />
+  <meta name="author" content="Harris Ishfaq" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Harris Ishfaq — Senior Software Engineer" />
+  <meta property="og:description" content="5 years building scalable web apps, AI-powered solutions, and digital health platforms. Ruby on Rails · Python · LangChain · React." />
+  <meta property="og:url"         content="https://harrisishfaq.github.io" />
+  <meta property="og:image"       content="https://harrisishfaq.github.io/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Harris Ishfaq — Senior Software Engineer" />
+  <meta name="twitter:description" content="5 years building scalable web apps, AI-powered solutions, and digital health platforms." />
+  <meta name="twitter:image"       content="https://harrisishfaq.github.io/og-image.png" />
+  <title>Harris Ishfaq — Senior Software Engineer</title>
+
+  <!-- Favicon — inline SVG, no file needed -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230d1117'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='18' fill='%232dd4bf'>H</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="navbar">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">HI<span class="nav__logo-dot">.</span></a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about"      class="nav__link">About</a></li>
+        <li><a href="#skills"     class="nav__link">Skills</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects"   class="nav__link">Projects</a></li>
+        <li><a href="#contact"    class="nav__link">Contact</a></li>
+      </ul>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Background decoration -->
+    <div class="hero__bg-grid"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+
+    <div class="hero__container">
+      <!-- Left: text -->
+      <div class="hero__text" data-animate="fade-up">
+        <div class="hero__greeting">
+          <span class="hero__greeting-line"></span>
+          Hello, I'm
+        </div>
+
+        <h1 class="hero__name">Harris<br /><span class="hero__name-grad">Ishfaq</span></h1>
+
+        <div class="hero__typewriter-wrap">
+          <span class="hero__typewriter" id="typewriter"></span>
+          <span class="hero__cursor">|</span>
+        </div>
+
+        <p class="hero__tagline">
+          5 years building scalable systems, integrating AI into production,<br class="hide-mobile" />
+          and shipping digital health products that matter.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact"  class="btn btn--outline">Download CV</a>
+        </div>
+
+        <div class="hero__badges">
+          <span class="badge"><span class="badge__dot"></span>Available for opportunities</span>
+          <span class="badge badge--loc">📍 Lahore, Pakistan</span>
+        </div>
+      </div>
+
+      <!-- Right: terminal visual -->
+      <div class="hero__visual" data-animate="fade-left">
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="terminal__btn terminal__btn--red"></span>
+            <span class="terminal__btn terminal__btn--yellow"></span>
+            <span class="terminal__btn terminal__btn--green"></span>
+            <span class="terminal__title">harris_ishfaq.py</span>
+          </div>
+          <div class="terminal__body">
+<pre class="terminal__code"><code><span class="t-keyword">from</span> <span class="t-class">langchain</span> <span class="t-keyword">import</span> <span class="t-class">LLM</span>, <span class="t-class">Chain</span>
+
+<span class="t-keyword">class</span> <span class="t-class">HarrisIshfaq</span>:
+    <span class="t-ivar">name</span>     <span class="t-operator">=</span> <span class="t-string">"Harris Ishfaq"</span>
+    <span class="t-ivar">role</span>     <span class="t-operator">=</span> <span class="t-string">"Senior Software Engineer"</span>
+    <span class="t-ivar">location</span> <span class="t-operator">=</span> <span class="t-string">"Lahore, Pakistan"</span>
+    <span class="t-ivar">stack</span>    <span class="t-operator">=</span> [
+        <span class="t-string">"Python"</span>, <span class="t-string">"FastAPI"</span>,
+        <span class="t-string">"LangChain"</span>, <span class="t-string">"React"</span>,
+        <span class="t-string">"PostgreSQL"</span>, <span class="t-string">"Rails"</span>
+    ]
+
+    <span class="t-keyword">def</span> <span class="t-method">build_ai_solution</span>(<span class="t-ivar">self</span>, problem):
+        chain <span class="t-operator">=</span> Chain<span class="t-operator">.</span><span class="t-method">from_llm</span>(LLM())
+        <span class="t-keyword">return</span> chain<span class="t-operator">.</span><span class="t-method">run</span>(problem)
+
+    <span class="t-keyword">def</span> <span class="t-method">passions</span>(<span class="t-ivar">self</span>):
+        <span class="t-keyword">return</span> [<span class="t-string">"AI"</span>, <span class="t-string">"Digital Health"</span>, <span class="t-string">"Scale"</span>]
+
+<span class="t-comment"># Ship it</span>
+<span class="t-const">harris</span> <span class="t-operator">=</span> HarrisIshfaq()
+harris<span class="t-operator">.</span><span class="t-method">build_ai_solution</span>(<span class="t-string">"healthcare"</span>)
+<span class="t-comment"># → "eMAR.ai + CareVirt deployed ✓"</span>
+</code></pre>
+          </div>
+        </div>
+
+        <div class="terminal__glow"></div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll-hint" aria-label="Scroll down">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">Get to know me</span>
+        <h2 class="section__title">About <span class="grad-text">Me</span></h2>
+      </div>
+
+      <div class="about__grid">
+        <!-- Left: avatar + stats -->
+        <div class="about__left" data-animate="fade-right">
+          <div class="about__avatar-wrap">
+            <div class="about__avatar">
+              <img src="harris.png" alt="Harris Ishfaq" class="about__photo" />
+              <div class="about__avatar-ring"></div>
+              <div class="about__avatar-ring about__avatar-ring--2"></div>
+            </div>
+          </div>
+
+          <div class="about__stats">
+            <div class="stat-card">
+              <span class="stat-card__number grad-text">5+</span>
+              <span class="stat-card__label">Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number grad-text">9</span>
+              <span class="stat-card__label">Projects Shipped</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number grad-text">3</span>
+              <span class="stat-card__label">Companies</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number grad-text">3,000+</span>
+              <span class="stat-card__label">Active on LinkedIn</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: text -->
+        <div class="about__right" data-animate="fade-left">
+          <h3 class="about__heading">Passionate about building things that <span class="grad-text">actually matter</span></h3>
+          <p class="about__body">
+            I'm a Software Engineer with experience building scalable web applications, AI-powered solutions, and digital healthcare platforms. My expertise spans the full software development lifecycle — from requirements gathering and system architecture to development, deployment, and long-term maintenance.
+          </p>
+          <p class="about__body">
+            I work across a modern stack including Ruby on Rails, Python, FastAPI, JavaScript, React, PostgreSQL, MySQL, REST APIs, and AI frameworks such as LangChain and LangSmith. I integrate LLMs into production applications, building intelligent systems that improve workflows, decision-making, and user experiences.
+          </p>
+          <p class="about__body">
+            I leverage tools like Claude Code, Cursor, and AI-assisted development workflows alongside clean architecture and automated testing to accelerate delivery without compromising quality. I enjoy collaborating with cross-functional teams and building products that create meaningful impact at scale.
+          </p>
+
+          <div class="about__interests">
+            <span class="interest-tag">🤖 AI / LLM Integration</span>
+            <span class="interest-tag">🏥 Digital Health</span>
+            <span class="interest-tag">🌐 System Architecture</span>
+            <span class="interest-tag">⚡ Full-Stack Engineering</span>
+            <span class="interest-tag">🧬 Health Informatics</span>
+          </div>
+
+          <a href="https://www.linkedin.com/in/harrisishfaq/" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">What I work with</span>
+        <h2 class="section__title">Tech Stack &amp; <span class="grad-text">Expertise</span></h2>
+      </div>
+
+      <div class="skills__all" data-animate="fade-up">
+        <div class="skills__group-inline">
+          <span class="skills__group-label">Languages &amp; Frameworks</span>
+          <div class="skills__pills">
+            <span class="skill-pill">💎 Ruby on Rails</span>
+            <span class="skill-pill">🐍 Python</span>
+            <span class="skill-pill">⚛️ ReactJS</span>
+            <span class="skill-pill">🅰️ AngularJS</span>
+            <span class="skill-pill">🟨 JavaScript</span>
+            <span class="skill-pill">🔴 Ruby</span>
+            <span class="skill-pill">🐘 PHP</span>
+            <span class="skill-pill">⚙️ C++</span>
+            <span class="skill-pill">🔷 C#</span>
+            <span class="skill-pill">⚡ FastAPI</span>
+            <span class="skill-pill">🎵 Symfony</span>
+          </div>
+        </div>
+        <div class="skills__group-inline">
+          <span class="skills__group-label">AI &amp; ML</span>
+          <div class="skills__pills">
+            <span class="skill-pill">🦜 LangChain</span>
+            <span class="skill-pill">🔭 LangSmith</span>
+            <span class="skill-pill">🧠 Generative AI</span>
+            <span class="skill-pill">📚 RAG Models</span>
+            <span class="skill-pill">👁️ OpenCV</span>
+            <span class="skill-pill">✍️ Prompt Engineering</span>
+            <span class="skill-pill">🔍 Vector Search</span>
+          </div>
+        </div>
+        <div class="skills__group-inline">
+          <span class="skills__group-label">Databases</span>
+          <div class="skills__pills">
+            <span class="skill-pill">🐘 PostgreSQL</span>
+            <span class="skill-pill">🐬 MySQL</span>
+            <span class="skill-pill">🪶 SQLite</span>
+            <span class="skill-pill">🍃 MongoDB</span>
+            <span class="skill-pill">🔴 Redis</span>
+            <span class="skill-pill">🌲 Pinecone</span>
+            <span class="skill-pill">🎨 ChromaDB</span>
+          </div>
+        </div>
+        <div class="skills__group-inline">
+          <span class="skills__group-label">DevOps &amp; Cloud</span>
+          <div class="skills__pills">
+            <span class="skill-pill">🐙 GitHub</span>
+            <span class="skill-pill">⚡ GitHub Actions</span>
+            <span class="skill-pill">🚀 Heroku</span>
+            <span class="skill-pill">☁️ Linode</span>
+            <span class="skill-pill">🪣 Amazon S3</span>
+            <span class="skill-pill">🔶 Cloudflare</span>
+            <span class="skill-pill">⏱️ Sidekiq</span>
+            <span class="skill-pill">🧪 RSpec / TDD</span>
+          </div>
+        </div>
+        <div class="skills__group-inline">
+          <span class="skills__group-label">Developer Tools</span>
+          <div class="skills__pills">
+            <span class="skill-pill">🤖 Claude Code</span>
+            <span class="skill-pill">🖱️ Cursor IDE</span>
+            <span class="skill-pill">📮 Postman</span>
+            <span class="skill-pill">📋 Jira</span>
+            <span class="skill-pill">📌 Trello</span>
+            <span class="skill-pill">🔄 Agile / Scrum</span>
+            <span class="skill-pill">💙 VS Code</span>
+            <span class="skill-pill">🪂 Antigravity</span>
+            <span class="skill-pill">💳 Stripe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EXPERIENCE
+  ═══════════════════════════════════════════ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">My journey</span>
+        <h2 class="section__title">Work <span class="grad-text">Experience</span></h2>
+      </div>
+
+      <div class="timeline">
+        <!-- iCareManager -->
+        <div class="timeline__item timeline__item--left" data-animate="fade-right">
+          <div class="timeline__dot">
+            <div class="timeline__dot-inner"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__company">iCareManager, LLC</h3>
+                <p class="timeline__role">Software Engineer</p>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__date">Jan 2023 – Present</span>
+                <span class="location-tag location-tag--remote">🌐 Remote, USA</span>
+              </div>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Lead design and development of scalable, high-performance applications across full-stack, cloud infrastructure, system architecture, and AI-driven solutions</li>
+              <li>Own the full lifecycle: stakeholder collaboration, requirements analysis, database design, API integration, performance optimization, and deployment automation</li>
+              <li>Champion clean code, maintainable architectures, and software quality standards for long-term product sustainability</li>
+              <li>Delivered digital products across healthcare, nonprofit, and enterprise sectors — improving operational efficiency and data-driven decision-making</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="skill-tag">Software Architecture</span>
+              <span class="skill-tag">AI Integration</span>
+              <span class="skill-tag">Cloud Infrastructure</span>
+              <span class="skill-tag">CI/CD Pipelines</span>
+              <span class="skill-tag">API Design</span>
+              <span class="skill-tag">Performance Optimization</span>
+              <span class="skill-tag">Full-Stack Development</span>
+              <span class="skill-tag">Database Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- iSOFT STUDIOS -->
+        <div class="timeline__item timeline__item--right" data-animate="fade-left">
+          <div class="timeline__dot">
+            <div class="timeline__dot-inner"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__company">iSOFT STUDIOS</h3>
+                <p class="timeline__role">Associate Software Engineer</p>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__date">Jul 2022 – Jan 2023</span>
+                <span class="location-tag">🏢 Lahore, On-site</span>
+              </div>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Designed, developed, and maintained payment processing solutions integrated with Stripe and FluidPay</li>
+              <li>Translated business requirements into technical implementations, developing and testing application features end-to-end</li>
+              <li>Collaborated with cross-functional teams to streamline payment workflows, improve system functionality, and enhance user experience</li>
+              <li>Supported production deployments while following clean code practices and software development best practices</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="skill-tag">Payment Integration</span>
+              <span class="skill-tag">API Integration</span>
+              <span class="skill-tag">Full-Stack Development</span>
+              <span class="skill-tag">Production Deployments</span>
+              <span class="skill-tag">Cross-functional Collaboration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CCJK Technologies -->
+        <div class="timeline__item timeline__item--left" data-animate="fade-right">
+          <div class="timeline__dot">
+            <div class="timeline__dot-inner"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__company">CCJK Technologies</h3>
+                <p class="timeline__role">Associate Software Engineer</p>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__date">Feb 2022 – Jun 2022</span>
+                <span class="location-tag">🏢 Lahore, On-site</span>
+              </div>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Contributed to development and maintenance of web applications across the full software development lifecycle</li>
+              <li>Implemented features, debugged issues, participated in testing, and supported application deployments</li>
+              <li>Strengthened problem-solving abilities and software architecture understanding within an Agile team environment</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="skill-tag">Web Application Development</span>
+              <span class="skill-tag">Feature Delivery</span>
+              <span class="skill-tag">Software Testing</span>
+              <span class="skill-tag">Agile / Scrum</span>
+              <span class="skill-tag">Technical Debugging</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="timeline__item timeline__item--right" data-animate="fade-left">
+          <div class="timeline__dot timeline__dot--edu">
+            <div class="timeline__dot-inner"></div>
+          </div>
+          <div class="timeline__card timeline__card--edu">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__company">COMSATS University Islamabad</h3>
+                <p class="timeline__role">B.S. Software Engineering</p>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__date">2018 – 2022</span>
+              </div>
+            </div>
+            <p class="timeline__edu-note">Bachelor of Science in Software Engineering — graduated with distinction, building a strong foundation in algorithms, software design, and systems architecture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">What I've built</span>
+        <h2 class="section__title">Featured <span class="grad-text">Projects</span></h2>
+      </div>
+
+      <div class="projects__grid projects__grid--3col">
+
+        <!-- CareVirt -->
+        <div class="project-card project-card--featured" data-animate="fade-up">
+          <div class="project-card__top-border"></div>
+          <div class="project-card__header">
+            <div class="project-card__icon">♾️</div>
+            <div class="project-card__links">
+              <a href="https://carevirt.com/" target="_blank" rel="noopener" class="project-card__link" aria-label="Visit CareVirt">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">CareVirt</h3>
+          <p class="project-card__desc">Care coordination platform for autism and IDD centres in low-resource settings — session tracking, IEP management, AI-powered assessments, and guardian portals to deliver personalised care at scale.</p>
+          <div class="project-card__duties">
+            <span class="duty-tag">Product Ownership</span><span class="duty-tag">System Architecture</span><span class="duty-tag">Full-Stack Development</span><span class="duty-tag">AI Integration</span><span class="duty-tag">Cloud Deployment</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__company">Self-Employed</span>
+            <span class="project-card__type project-card__type--health">Digital Health</span>
+          </div>
+        </div>
+
+        <!-- eMAR.ai -->
+        <div class="project-card" data-animate="fade-up">
+          <div class="project-card__top-border"></div>
+          <div class="project-card__header">
+            <div class="project-card__icon">💊</div>
+            <div class="project-card__links">
+              <a href="http://emar.ai/" target="_blank" rel="noopener" class="project-card__link" aria-label="Visit eMAR.ai">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">eMAR.ai</h3>
+          <p class="project-card__desc">AI-powered system that digitises and manages medication administration records — streamlining documentation and tracking of medication delivery for healthcare providers.</p>
+          <div class="project-card__duties">
+            <span class="duty-tag">Product Ownership</span><span class="duty-tag">Full-Stack Development</span><span class="duty-tag">System Design</span><span class="duty-tag">End-to-End SDLC</span><span class="duty-tag">AI/LLM Integration</span><span class="duty-tag">API Design</span><span class="duty-tag">Prompt Engineering</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__company">iCareManager, LLC</span>
+            <span class="project-card__type project-card__type--ai">AI-Powered</span>
+          </div>
+        </div>
+
+        <!-- Credibal -->
+        <div class="project-card" data-animate="fade-up">
+          <div class="project-card__top-border"></div>
+          <div class="project-card__header">
+            <div class="project-card__icon">🏛️</div>
+            <div class="project-card__links">
+              <a href="http://credibal.com/" target="_blank" rel="noopener" class="project-card__link" aria-label="Visit Credibal">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">Credibal.com</h3>
+          <p class="project-card__desc">Fundraising platform for nonprofits that combines donor management with impact reporting — automating personalised donor communications to improve retention and engagement.</p>
+          <div class="project-card__duties">
+            <span class="duty-tag">Product Ownership</span><span class="duty-tag">System Design</span><span class="duty-tag">Architecture Design</span><span class="duty-tag">Full-Stack Development</span><span class="duty-tag">Payment Integration</span><span class="duty-tag">AI Features</span><span class="duty-tag">Background Processing</span><span class="duty-tag">Performance Optimisation</span><span class="duty-tag">Version Upgrading</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__company">iCareManager, LLC</span>
+            <span class="project-card__type project-card__type--fintech">Nonprofit</span>
+          </div>
+        </div>
+
+        <!-- iCareManager -->
+        <div class="project-card" data-animate="fade-up">
+          <div class="project-card__top-border"></div>
+          <div class="project-card__header">
+            <div class="project-card__icon">🏥</div>
+            <div class="project-card__links">
+              <a href="https://icaremanager.com" target="_blank" rel="noopener" class="project-card__link" aria-label="Visit iCareManager">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">iCareManager</h3>
+          <p class="project-card__desc">Cloud-based EHR built for IDD providers and human services organisations — care planning, medication management, billing, and compliance in one platform serving 15,000+ staff across 30+ states.</p>
+          <div class="project-card__duties">
+            <span class="duty-tag">Feature Development</span><span class="duty-tag">API Integration</span><span class="duty-tag">Database Design</span><span class="duty-tag">Cross-team Collaboration</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__company">iCareManager, LLC</span>
+            <span class="project-card__type project-card__type--health">Digital Health</span>
+          </div>
+        </div>
+
+        <!-- MarsTranslation -->
+        <div class="project-card" data-animate="fade-up">
+          <div class="project-card__top-border"></div>
+          <div class="project-card__header">
+            <div class="project-card__icon">🗣️</div>
+            <div class="project-card__links">
+              <a href="https://www.marstranslation.com/" target="_blank" rel="noopener" class="project-card__link" aria-label="Visit MarsTranslation">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">MarsTranslation.com</h3>
+          <p class="project-card__desc">Professional translation services company delivering fast, native-quality translations across multiple languages and industries at global scale.</p>
+          <div class="project-card__duties">
+            <span class="duty-tag">Backend Development</span><span class="duty-tag">Feature Implementation</span><span class="duty-tag">Database Management</span><span class="duty-tag">Bug Fixing</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__company">CCJK Technologies</span>
+            <span class="project-card__type project-card__type--saas">SaaS</span>
+          </div>
+        </div>
+
+        <!-- MarsHub -->
+        <div class="project-card" data-animate="fade-up">
+          <div class="project-card__top-border"></div>
+          <div class="project-card__header">
+            <div class="project-card__icon">🤝</div>
+            <div class="project-card__links">
+              <a href="https://www.marshub.com/" target="_blank" rel="noopener" class="project-card__link" aria-label="Visit MarsHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">MarsHub.com</h3>
+          <p class="project-card__desc">AI-Human collaboration hub powering CCJK's global translation operations — combining human expertise with AI to deliver accurate, native-quality language services at speed.</p>
+          <div class="project-card__duties">
+            <span class="duty-tag">Full-Stack Development</span><span class="duty-tag">Bug Fixing</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__company">CCJK Technologies</span>
+            <span class="project-card__type project-card__type--ai">AI-Powered</span>
+          </div>
+        </div>
+
+        <!-- Guide Pointer -->
+        <div class="project-card" data-animate="fade-up">
+          <div class="project-card__top-border"></div>
+          <div class="project-card__header">
+            <div class="project-card__icon">🏕️</div>
+            <div class="project-card__links">
+              <a href="https://www.guidepointer.com/" target="_blank" rel="noopener" class="project-card__link" aria-label="Visit Guide Pointer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">GuidePointer.com</h3>
+          <p class="project-card__desc">Web-based management software for guides and outfitters — reservations, client management, guide scheduling, lodging, and multi-day packages all in one platform.</p>
+          <div class="project-card__duties">
+            <span class="duty-tag">Full-Stack Development</span><span class="duty-tag">Payment Integration</span><span class="duty-tag">Booking System</span><span class="duty-tag">API Integration</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__company">iSOFT STUDIOS</span>
+            <span class="project-card__type project-card__type--saas">SaaS</span>
+          </div>
+        </div>
+
+        <!-- AnswerThePublic -->
+        <div class="project-card" data-animate="fade-up">
+          <div class="project-card__top-border"></div>
+          <div class="project-card__header">
+            <div class="project-card__icon">💬</div>
+            <div class="project-card__links">
+              <a href="https://answerthepublic.com/en" target="_blank" rel="noopener" class="project-card__link" aria-label="Visit AnswerThePublic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">AnswerThePublic</h3>
+          <p class="project-card__desc">Search listening and keyword research platform surfacing real questions, comparisons, and phrases people type into search engines — helping marketers and content teams plan with actual intent data.</p>
+          <div class="project-card__duties">
+            <span class="duty-tag">Backend Development</span><span class="duty-tag">Data Processing</span><span class="duty-tag">Frontend Features</span><span class="duty-tag">Performance Optimisation</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__company">iSOFT STUDIOS</span>
+            <span class="project-card__type project-card__type--saas">SaaS</span>
+          </div>
+        </div>
+
+        <!-- Productions.com -->
+        <div class="project-card" data-animate="fade-up">
+          <div class="project-card__top-border"></div>
+          <div class="project-card__header">
+            <div class="project-card__icon">🎥</div>
+            <div class="project-card__links">
+              <a href="http://productions.com/" target="_blank" rel="noopener" class="project-card__link" aria-label="Visit Productions.com">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">Productions.com</h3>
+          <p class="project-card__desc">Precision production staffing platform connecting entertainment professionals with jobs across 30+ countries — rapid deployment of qualified producers, directors, and crew within 24–48 hours.</p>
+          <div class="project-card__duties">
+            <span class="duty-tag">Full-Stack Development</span><span class="duty-tag">Platform Architecture</span><span class="duty-tag">Feature Delivery</span><span class="duty-tag">Database Design</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__company">iSOFT STUDIOS</span>
+            <span class="project-card__type project-card__type--saas">SaaS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">What colleagues say</span>
+        <h2 class="section__title">Recommendations</h2>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card" data-animate="fade-up">
+          <div class="testimonial-card__quote-mark">"</div>
+          <p class="testimonial-card__text">Truly impressed by his skills and meticulous attention to detail. His proficiency in Ruby and Rails was evident in every piece of work he delivered. Remarkable dedication to continuous improvement — a pleasure to work alongside.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">SJ</div>
+            <div>
+              <p class="testimonial-card__name">Syed Jawad Hassan</p>
+              <p class="testimonial-card__title">Senior .NET Engineer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-animate="fade-up">
+          <div class="testimonial-card__quote-mark">"</div>
+          <p class="testimonial-card__text">Full of spark in his domain. A good developer with amazing skills and also a great team member. His enthusiasm for solving problems and eagerness to help colleagues makes him an invaluable part of any engineering team.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar testimonial-card__avatar--green">IM</div>
+            <div>
+              <p class="testimonial-card__name">Irum Mushtaq</p>
+              <p class="testimonial-card__title">Software Engineer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">Get in touch</span>
+        <h2 class="section__title">Let's <span class="grad-text">Connect</span></h2>
+        <p class="section__subtitle">Have a project in mind or want to discuss opportunities? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact__grid">
+        <!-- Info -->
+        <div class="contact__info" data-animate="fade-right">
+          <h3 class="contact__info-title">Reach out directly</h3>
+          <p class="contact__info-body">Whether it's a new project, a collaboration, or just a chat about technology and AI — my inbox is always open.</p>
+
+          <div class="contact__links">
+            <a href="mailto:harisishfaq07@gmail.com" class="contact__link">
+              <div class="contact__link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <span class="contact__link-label">Email</span>
+                <span class="contact__link-value">harisishfaq07@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/harrisishfaq/" target="_blank" rel="noopener" class="contact__link">
+              <div class="contact__link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <div>
+                <span class="contact__link-label">LinkedIn</span>
+                <span class="contact__link-value">in/harrisishfaq</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/harrisishfak" target="_blank" rel="noopener" class="contact__link">
+              <div class="contact__link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <span class="contact__link-label">GitHub</span>
+                <span class="contact__link-value">github.com/harrisishfak</span>
+              </div>
+            </a>
+
+            <a href="tel:+923164910570" class="contact__link">
+              <div class="contact__link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <span class="contact__link-label">Phone</span>
+                <span class="contact__link-value">+92 316 4910 570</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact__form-wrap" data-animate="fade-left">
+          <form class="contact__form" id="contactForm" action="https://formspree.io/f/meebealn" method="POST">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Your Name</label>
+                <input class="form__input" id="name" name="name" type="text" placeholder="John Doe" required />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email Address</label>
+                <input class="form__input" id="email" name="email" type="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="subject">Subject</label>
+              <input class="form__input" id="subject" name="subject" type="text" placeholder="Project discussion, collaboration..." />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Message</label>
+              <textarea class="form__input form__textarea" id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+            <button class="btn btn--primary btn--full" type="submit">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polygon points="22 2 15 22 11 13 2 9 22 2" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="none"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#hero" class="nav__logo footer__logo">HI<span class="nav__logo-dot">.</span></a>
+        <p class="footer__copy">Built with passion by <span class="grad-text">Harris Ishfaq</span> &copy; 2026</p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/harrisishfaq/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer__social">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg>
+          </a>
+          <a href="https://github.com/harrisishfak" target="_blank" rel="noopener" aria-label="GitHub" class="footer__social">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="mailto:harisishfaq07@gmail.com" aria-label="Email" class="footer__social">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
