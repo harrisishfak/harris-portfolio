@@ -89,7 +89,7 @@ function initTypewriter() {
 
   const strings = [
     'AI-Integrated Software Engineer',
-    'Full-Stack Web Engineer',
+    'Full-Stack Software Engineer',
     'LLM Integration Specialist',
     'Digital Health Builder',
   ];
